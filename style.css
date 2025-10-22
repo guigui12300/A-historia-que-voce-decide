@@ -1,11 +1,50 @@
 :root{
     /* CSS HEX */
---preto: #000000ff;
+--amarelo: rgb(236, 221, 17);
 --azul : #14213dff;
 --laranja: #fca311ff;
 --branco: #ffffffff;
 }
 
 body{
-    background-color: var(--preto);
+    background-color: var(--amarelo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+
 }
+
+main{
+margin: 20px;
+text-align: center;
+max-width: 90%;
+
+}
+
+button{
+background-color: var(--laranja);
+font-size: 22px;
+padding: 4px;
+border-radius: 10px;
+margin: 5px;
+color: rgb(255, 255, 255);
+box-shadow: 2px 2px 5px black;
+}
+button:hover{
+background-color: var(--azul);
+box-shadow: none;
+transition: 0.5s;
+}
+
+.passo{
+display: none;
+
+}
+
+.passo.ativo{
+    display: block;
+}
+
